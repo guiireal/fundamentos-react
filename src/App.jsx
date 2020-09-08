@@ -16,6 +16,9 @@ import ProductTable from "./components/repetition/ProductTable";
 import EvenOrOdd from "./components/conditional/EvenOrOdd";
 import UserInfo from "./components/conditional/UserInfo";
 
+import DirectParent from "./components/communication/DirectParent";
+import IndirectParent from "./components/communication/IndirectParent";
+
 export default () => (
   <div id="app">
     <h1>Fundamentos React</h1>
@@ -47,6 +50,12 @@ export default () => (
         <EvenOrOdd number={20} />
         <UserInfo user={{ name: "Guilherme" }} />
         <UserInfo user={{ email: "joao@gmail.com" }} />
+      </Card>
+      <Card title="#08 - Comunicação Direta" color="#59323C">
+        <DirectParent />
+      </Card>
+      <Card title="#09 - Comunicação Indireta" color="#8bad39">
+        <IndirectParent />
       </Card>
     </div>
   </div>
